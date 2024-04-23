@@ -1,4 +1,5 @@
 # BrainyPedia Design Document
+**Author:** Tek Raj Chhetri | <tekraj@mit.edu>
 
 ## Overview
 _BrainyPedia serves as a knowledge base platform that provides scientists worldwide with tools for searching, exploring, and visualizing Neuroscience knowledge represented by knowledge graphs (KGs)_. Moreover, BrainyPedia provides cutting-edge tools that enable scientists to contribute new information (or knowledge) to the platform, ensuring it remains the go-to destination for all neuroscience-related research needs.
@@ -13,10 +14,18 @@ The main objective of BrainyPedia is to represent Neuroscience knowledge as a kn
 - (Semi-)automatically validates (e.g., quality) the extracted KGs to ensure that the BrainyPedia KGs are high quality. 
 - Provides the ability to ingest data in batch or streaming mode for the automated extraction of KGs.
 
+## Why BrainyPedia?
+- **Limited Availability of Platforms for Integrating Neuroscience Data into Knowledge Graphs:** In fields such as biomedicine, many platforms, e.g., [SPOKE](https://doi.org/10.1093/bioinformatics/btad080) and [CIViC](https://civicdb.org/welcome), exist for  (the construction and maintenance of) large-scale KGs to be accessible. <span style="color: red;">However, such resources are comparatively limited in the domain of neuroscience.</span> [LinkRBrain](https://doi.org/10.1016/j.jneumeth.2014.12.008), a web-based platform that integrates anatomical, functional, and genetic knowledge, is among the limited number of such resources. [BrainKnow](http://www.brain-knowledge-engine.org/), the most recent platform, is another platform that is designed to [synthesizes and integrates neuroscience knowledge from scientific literature](https://arxiv.org/pdf/2403.04346.pdf). Additionally, projects like [DANDI](https://dandiarchive.org/) are making strides by enabling the publication and sharing of neurophysiology data, but not on KGs. 
+
+- **Lack of Support for Heterogeneous Data Sources:** The current platforms in neuroscience are limited in their ability to handle a diverse range of data sources. For instance, [LinkRBrain](https://doi.org/10.1016/j.jneumeth.2014.12.008) can only integrate knowledge from 41 databases, whereas [BrainKnow](http://www.brain-knowledge-engine.org/) solely focuses on scientific literature. <span style="color: red;">However, knowledge is not restricted to just databases or scientific literature, and there is a need for platforms that can accommodate a wider variety of sources (e.g., structured, semi-structured and unstructured sources).</span>
+
 ## Principles
 
 ### Data Ingestion
 BrainyPedia will support the data from various sources in different formats  (e.g., texts, JSON (JavaScript Object Notation)) for knowledge extraction via the BrainyPedia user interface (UI) and the API endpoints. Both batch and streaming data ingestion modes will be supported.
+ 
+
+
 
 ### Schema Flexibility
 KGs evolve over time. Therefore, BrainyPedia will support this evolution by allowing the addition (or removal) of entities and relationships (or new knowledge).
