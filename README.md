@@ -67,6 +67,47 @@ __Resource:__ The resource will provide the necessary computational resources th
 
 The sequence diagram below shows the interactions between different service components for the KG construction.
 
-![](sequence.png)
 
+```mermaid
+sequenceDiagram
+    autonumber
 
+    participant User
+    participant UI
+    participant KG_Construction as (Semi-) structured KG construction
+    participant Mapping as Mapping & Annotation
+    participant Alignment as Alignment & resolution
+    participant Validation as Validation & Quality assurance
+    participant Expert
+    participant Triplestore
+    User->>+ UI: Upload CSV
+    UI->>+KG_Construction: Return response
+    KG_Construction->>+KG_Construction: Perform initial check, e.g., presence of required columns
+
+    alt is invalid
+        KG_Construction-->>+UI: Return Error message
+        UI-->>+User: Return Error message
+    else is valid
+        KG_Construction->>+ Mapping: Perform mapping & annotation as necessary
+        Mapping->>+ Validation: Perform validation of KG triples
+        Validation->>+Validation: Validation checks, e.g., SHACL, provenance conflict
+        Validation->>+ Alignment: Resolve conflicts
+        alt conflict identified, perform resolution
+            Alignment->>+ Alignment: Perform automated conflict resolution and alignment operation
+            Alignment-->>+ Validation: Return response (triples with resolved conflicts)
+            
+
+        else conflict identified, perform resolution-requires human oversight
+            Alignment->>+ Expert: Send to expert for manual conflict resolution
+            Expert-->>+Alignment: Return response (triples with resolved conflicts)
+            Alignment-->>+ Validation: Return response (triples with resolved conflicts) 
+            
+        end 
+            Validation-->>+ Mapping: Return response (validated and conflict resolved KG triples)
+            Mapping-->>+ KG_Construction: Updated KG triples
+            KG_Construction->>+Triplestore: Store KG in database
+            Triplestore-->>+KG_Construction: Return acknowledgement
+            KG_Construction-->>+UI: Return response (operation status notification)
+            UI-->>+User:Send notification
+    end
+```
