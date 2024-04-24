@@ -19,6 +19,18 @@ The main objective of BrainyPedia is to represent Neuroscience knowledge as a kn
 
 - **Lack of Support for Heterogeneous Data Sources:** The current platforms in neuroscience are limited in their ability to handle a diverse range of data sources. For instance, [LinkRBrain](https://doi.org/10.1016/j.jneumeth.2014.12.008) can only integrate knowledge from 41 databases, whereas [BrainKnow](http://www.brain-knowledge-engine.org/) solely focuses on scientific literature. <span style="color: red;">However, knowledge is not restricted to just databases or scientific literature, and there is a need for platforms that can accommodate a wider variety of sources (e.g., structured, semi-structured and unstructured sources).</span>
 
+## Timelines 
+
+| Date       | Event                          |
+|------------|--------------------------------|
+| 2024-03-26 | Project Conceptualization      |
+| 2024-04-05 | Initial Architecture Design Phase Completed |
+| 2024-04-23 | Work on Design Document      |
+| 2024-04-25 | Development Phase Started      |
+| 2024-06-25 | First version of BrainyPedia   |
+| 2024-12-25 | Second version of BrainyPedia  |
+| 2025-04-10 | First complete version of BrainyPedia with all conceptualized features                |
+
 ## Principles
 
 ### Data Ingestion
