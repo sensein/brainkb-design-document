@@ -154,7 +154,7 @@ sequenceDiagram
 | 2024-04-05 | Initial Architecture Design Phase Completed |
 | 2024-04-23 | Work on Design Document      |
 | 2024-04-25 | Development Phase Started      |
-| 2024-06-25 | First version of BrainyPedia   |
+| 2024-05-25 | First version of BrainyPedia   |
 | 2024-12-25 | Second version of BrainyPedia  |
 | 2025-04-10 | First complete version of BrainyPedia with all conceptualized features                |
 
