@@ -19,25 +19,12 @@ The main objective of BrainyPedia is to represent Neuroscience knowledge as a kn
 
 - **Lack of Support for Heterogeneous Data Sources:** The current platforms in neuroscience are limited in their ability to handle a diverse range of data sources. For instance, [LinkRBrain](https://doi.org/10.1016/j.jneumeth.2014.12.008) can only integrate knowledge from 41 databases, whereas [BrainKnow](http://www.brain-knowledge-engine.org/) solely focuses on scientific literature. <span style="color: red;">However, knowledge is not restricted to just databases or scientific literature, and there is a need for platforms that can accommodate a wider variety of sources (e.g., structured, semi-structured and unstructured sources).</span>
 
-## Timelines 
-
-| Date       | Event                          |
-|------------|--------------------------------|
-| 2024-03-26 | Project Conceptualization      |
-| 2024-04-05 | Initial Architecture Design Phase Completed |
-| 2024-04-23 | Work on Design Document      |
-| 2024-04-25 | Development Phase Started      |
-| 2024-06-25 | First version of BrainyPedia   |
-| 2024-12-25 | Second version of BrainyPedia  |
-| 2025-04-10 | First complete version of BrainyPedia with all conceptualized features                |
 
 ## Principles
 
 ### Data Ingestion
 BrainyPedia will support the data from various sources in different formats  (e.g., texts, JSON (JavaScript Object Notation)) for knowledge extraction via the BrainyPedia user interface (UI) and the API endpoints. Both batch and streaming data ingestion modes will be supported.
  
-
-
 
 ### Schema Flexibility
 KGs evolve over time. Therefore, BrainyPedia will support this evolution by allowing the addition (or removal) of entities and relationships (or new knowledge).
@@ -71,7 +58,33 @@ As BrainyPedia will also provide features to perform the analytics operation in 
 
 ## Other considerations
 
-__Assumption:__We operate on open-world assumptions (OWA), not closed-world assumptions (CSA). In OWA, we do not make any assumptions about the absence of statements, while in CSA absence of statements would be evaluated as false, i.e., assumed to be false.
+__Assumption:__ We operate on open-world assumptions (OWA), not closed-world assumptions (CSA). In OWA, we do not make any assumptions about the absence of statements, while in CSA absence of statements would be evaluated as false, i.e., assumed to be false.
+
+## Use cases
+
+- **Knowledge Extraction and Integration:** BrainyPedia extracts knowledge from diverse sources, such as projects and lab meetings, and formats (scientific literature, databases, text, and JSON) into unified KG representation, offering a comprehensive and integrated view of neuroscience knowledge. For example, projects like [DANDI:](https://www.dandiarchive.org/), [BICAN:](https://www.portal.brain-bican.org/), [NeuroLex](https://scicrunch.org/scicrunch/interlex/dashboard) and [ReproNim:](https://www.repronim.org/) store vast amounts of neuroscience knowledge; integrating all the knowledge into a single platform will not only provide an integrated view but also enable new knowledge discovery.
+
+- **Visualization & Analytics:**
+- 
+
+## Schema
+
+## Usage Scenario
+**Actor:** A
+
+**Role:** Neuroscientists/Researcher
+
+**Task:** Actor A wants to know if they can gain new insights from their newly collected neuroscience data.
+
+**Precondition:** The dataset is usable, i.e., is not corrupted and is related to the neuroscience domain.
+
+**Flow:**
+
+1. Actor A uploads the data into the BrainyPedia platform through the BrainyPedia UI (User Interface).
+2. BrainyPedia, the system, then analyzes data. If any error, e.g., unsupported file format, it will return the error; otherwise, the system will proceed to the next step of knowledge extraction.
+3. The system will perform the knowledge extraction, validation, and alignment operation. If the validation or the alignment issue cannot be resolved automatically, the extracted knowledge represented via KG is flagged for expert review. Upon the successful review, the KGs are integrated (or stored) in the BrainyPedia storage and is available for visualization and analysis.
+
+**Postcondition:** Actor A discovers new insights through the integration of diverse knowledge sources represented in BrainyPedia's KGs.
 
 ## Architecture
 The figure below shows the high-level overview of the components of the BrainyPedia architecture.
@@ -132,3 +145,17 @@ sequenceDiagram
             UI-->>+User:Send notification
     end
 ```
+
+## Timelines 
+
+| Date       | Event                          |
+|------------|--------------------------------|
+| 2024-03-26 | Project Conceptualization      |
+| 2024-04-05 | Initial Architecture Design Phase Completed |
+| 2024-04-23 | Work on Design Document      |
+| 2024-04-25 | Development Phase Started      |
+| 2024-06-25 | First version of BrainyPedia   |
+| 2024-12-25 | Second version of BrainyPedia  |
+| 2025-04-10 | First complete version of BrainyPedia with all conceptualized features                |
+
+
