@@ -15,7 +15,7 @@ The main objective of BrainyPedia is to represent Neuroscience knowledge as a kn
 - Provides the ability to ingest data in batch or streaming mode for the automated extraction of KGs.
 
 ## Why BrainyPedia?
-- **Limited Availability of Platforms for Integrating Neuroscience Data into Knowledge Graphs:** In fields such as biomedicine, many platforms, e.g., [SPOKE](https://doi.org/10.1093/bioinformatics/btad080) and [CIViC](https://civicdb.org/welcome), exist for  (the construction and maintenance of) large-scale KGs to be accessible. <span style="color: red;">However, such resources are comparatively limited in the domain of neuroscience.</span> [LinkRBrain](https://doi.org/10.1016/j.jneumeth.2014.12.008), a web-based platform that integrates anatomical, functional, and genetic knowledge, is among the limited number of such resources. [BrainKnow](http://www.brain-knowledge-engine.org/), the most recent platform, is another platform that is designed to [synthesizes and integrates neuroscience knowledge from scientific literature](https://arxiv.org/pdf/2403.04346.pdf). Additionally, projects like [DANDI](https://dandiarchive.org/) are making strides by enabling the publication and sharing of neurophysiology data, but not on KGs. 
+- **Limited Availability of Platforms for Integrating Neuroscience Data into Knowledge Graphs:** In fields such as biomedicine, many platforms exist, such as, [SPOKE](https://doi.org/10.1093/bioinformatics/btad080) and [CIViC](https://civicdb.org/welcome). <span style="color: red;">However, such resources are comparatively limited in the domain of neuroscience.</span> [LinkRBrain](https://doi.org/10.1016/j.jneumeth.2014.12.008), a web-based platform that integrates anatomical, functional, and genetic knowledge, is among the limited number of such resources. [BrainKnow](http://www.brain-knowledge-engine.org/), the most recent platform, is another platform that is designed to [synthesizes and integrates neuroscience knowledge from scientific literature](https://arxiv.org/pdf/2403.04346.pdf). Additionally, projects like [DANDI](https://dandiarchive.org/) are making strides by enabling sharing of neurophysiology data together with its metadata. 
 
 - **Lack of Support for Heterogeneous Data Sources:** The current platforms in neuroscience are limited in their ability to handle a diverse range of data sources. For instance, [LinkRBrain](https://doi.org/10.1016/j.jneumeth.2014.12.008) can only integrate knowledge from 41 databases, whereas [BrainKnow](http://www.brain-knowledge-engine.org/) solely focuses on scientific literature. <span style="color: red;">However, knowledge is not restricted to just databases or scientific literature, and there is a need for platforms that can accommodate a wider variety of sources (e.g., structured, semi-structured and unstructured sources).</span>
 
@@ -27,7 +27,7 @@ BrainyPedia will support the data from various sources in different formats  (e.
  
 
 ### Schema Flexibility
-KGs evolve over time. Therefore, BrainyPedia will support this evolution by allowing the addition (or removal) of entities and relationships (or new knowledge).
+KGs evolve over time. For example, if we consider the case of the president of a country, it changes overtime. The KGs storing the storing the information regarding the president of the country has to be updated accordingly. Similar is the case for the neuroscience or any other domain. The knowledge may change over time based on new research findings, thereby making previous knowledge obsolete or factually incorrect. Additionally, changes might also occur in the case of schema, such as due to the standardization or alignment or updates.  While the need to change the schema, for example, does not always occur, the schema changes may be required to accommodate the new knowledge. Therefore, BrainyPedia will support this evolution by allowing the addition (or removal) of entities and relationships (or new knowledge).
 
 ### Maintainability
 BrainyPedia shall be maintainable, allowing operations such as KG enrichment and validation to be performed easily.
@@ -60,6 +60,17 @@ As BrainyPedia will also provide features to perform the analytics operation in 
 
 __Assumption:__ We operate on open-world assumptions (OWA), not closed-world assumptions (CSA). In OWA, we do not make any assumptions about the absence of statements, while in CSA absence of statements would be evaluated as false, i.e., assumed to be false.
 
+## Architecture
+The figure below shows the high-level overview of the components of the BrainyPedia architecture.
+
+__Application:__ The application (or the application layer) is the go-to point that provides access to BrainyPedia, such as via UI.
+
+__Service:__ The service layer implements the core logic and is broken down into multiple services based on the functionalities. Furthermore, the services are divided into two layers, layer 1 and layer 2 as indicated by L1 and L2 in the figure below. This is to distinguish what will be exposed to the outside world. The L1 services will expose the API endpoints for external integration while the L2 services will not. L2 services interact with L1 services only. 
+
+__Resource:__ The resource will provide the necessary computational resources that are required to deliver the required service by BrainyPedia.
+
+![](initial-arch.png)
+
 ## Use cases
 
 - **Knowledge Extraction and Integration:** BrainyPedia extracts knowledge from diverse sources, such as projects and lab meetings, and formats (scientific literature, databases, text, and JSON) into unified KG representation, offering a comprehensive and integrated view of neuroscience knowledge. For example, projects like [DANDI:](https://www.dandiarchive.org/), [BICAN:](https://www.portal.brain-bican.org/), [NeuroLex](https://scicrunch.org/scicrunch/interlex/dashboard) and [ReproNim:](https://www.repronim.org/) store vast amounts of neuroscience knowledge; integrating all the knowledge into a single platform will not only provide an integrated view but also enable new knowledge discovery.
@@ -86,16 +97,6 @@ __Assumption:__ We operate on open-world assumptions (OWA), not closed-world ass
 
 **Postcondition:** Actor A discovers new insights through the integration of diverse knowledge sources represented in BrainyPedia's KGs.
 
-## Architecture
-The figure below shows the high-level overview of the components of the BrainyPedia architecture.
-
-__Application:__ The application (or the application layer) is the go-to point that provides access to BrainyPedia, such as via UI.
-
-__Service:__ The service layer implements the core logic and is broken down into multiple services based on the functionalities. Furthermore, the services are divided into two layers, layer 1 and layer 2 as indicated by L1 and L2 in the figure below. This is to distinguish what will be exposed to the outside world. The L1 services will expose the API endpoints for external integration while the L2 services will not. L2 services interact with L1 services only. 
-
-__Resource:__ The resource will provide the necessary computational resources that are required to deliver the required service by BrainyPedia.
-
-![](initial-arch.png)
 
 ## Sequence diagram
 
