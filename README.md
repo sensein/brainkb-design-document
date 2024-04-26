@@ -19,6 +19,11 @@ The main objective of BrainyPedia is to represent Neuroscience knowledge as a kn
 
 - **Lack of Support for Heterogeneous Data Sources:** The current platforms in neuroscience are limited in their ability to handle a diverse range of data sources. For instance, [LinkRBrain](https://doi.org/10.1016/j.jneumeth.2014.12.008) can only integrate knowledge from 41 databases, whereas [BrainKnow](http://www.brain-knowledge-engine.org/) solely focuses on scientific literature. <span style="color: red;">However, knowledge is not restricted to just databases or scientific literature, and there is a need for platforms that can accommodate a wider variety of sources (e.g., structured, semi-structured and unstructured sources).</span>
 
+	- **Example:**
+		- Structured data: Relational database
+		- Semi-structured data: JSON, XML and CSV files
+		- Unsuctured data: Text, Video files
+
 
 ## Principles
 
@@ -27,7 +32,9 @@ BrainyPedia will support the data from various sources in different formats  (e.
  
 
 ### Schema Flexibility
-KGs evolve over time. For example, if we consider the case of the president of a country, it changes overtime. The KGs storing the storing the information regarding the president of the country has to be updated accordingly. Similar is the case for the neuroscience or any other domain. The knowledge may change over time based on new research findings, thereby making previous knowledge obsolete or factually incorrect. Additionally, changes might also occur in the case of schema, such as due to the standardization or alignment or updates.  While the need to change the schema, for example, does not always occur, the schema changes may be required to accommodate the new knowledge. Therefore, BrainyPedia will support this evolution by allowing the addition (or removal) of entities and relationships (or new knowledge).
+KGs evolve over time. For example, if we consider the case of the president of a country, it changes overtime. The KGs storing the storing the information regarding the president of the country has to be updated accordingly. Similar is the case for the neuroscience or any other domain. The knowledge may change over time based on new research findings, thereby making previous knowledge obsolete or factually incorrect. Additionally, changes might also occur in the case of schema, such as due to the standardization or alignment or updates. While schema changes may not always be necessary, they may be required to accommodate new information. Therefore, BrainyPedia will support this evolution by allowing the addition (or removal) of entities and relationships (or new knowledge).
+
+- **Example:**
 
 ### Maintainability
 BrainyPedia shall be maintainable, allowing operations such as KG enrichment and validation to be performed easily.
@@ -55,6 +62,8 @@ To ensure interoperability and ease of integration, BrainyPedia will focus on us
 
 ### Minimize Cognitive Burden and Data Fatigue
 As BrainyPedia will also provide features to perform the analytics operation in addition to querying the information (or knowledge), a special emphasis shall be placed on ensuring that the information presented to the user does not cause a cognitive burden and data fatigue.  For example, the figure below (left) places more cognitive burden than on the right.
+
+![](cognitive_burden.png)
 
 ## Other considerations
 
@@ -97,6 +106,12 @@ __Resource:__ The resource will provide the necessary computational resources th
 
 **Postcondition:** Actor A discovers new insights through the integration of diverse knowledge sources represented in BrainyPedia's KGs.
 
+## Technology
+- FastAPI
+- Docker
+- Serverles
+- Python
+- Language models ((e.g., Google BERT and LLaMa)
 
 ## Sequence diagram
 
