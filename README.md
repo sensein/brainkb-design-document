@@ -80,6 +80,16 @@ __Resource:__ The resource will provide the necessary computational resources th
 
 ![](initial-arch.png)
 
+## Target Audience
+
+- **Neuroscience researchers:** BrainyPedia's primary audience is neuroscience researchers, who can use the platform to integrate, visualize, and analyze neuroscience data. They can also capitalize on the platform's ability to synthesize their data (or knowledge) into KGs.
+
+- **Research Labs and Academic Institutions:** BrainyPedia will be an invaluable resource for teaching and research in academic contexts specializing in neuroscience research. It offers convenient access to integrated neuroscience data for faculty and students.
+
+- **Policy Makers and Healthcare Professionals:** Neurology policymakers can use BrainyPedia, aka the neuroscience knowledge that BrainyPedia hosts, to make policy decisions. Furthermore, healthcare professionals in neurology (or clinical neuroscience) may also use BrainyPedia knowledge to understand and improve neurological disease outcomes.
+
+- **Neuroscience-related Companies:** Companies specializing in developing drugs for neurological diseases can use the platform's KGs to gain insights into neurological conditions and treatments.
+
 ## Use cases
 
 - **Knowledge Extraction and Integration:** BrainyPedia extracts knowledge from diverse sources, such as projects and lab meetings, and formats (scientific literature, databases, text, and JSON) into unified KG representation, offering a comprehensive and integrated view of neuroscience knowledge. For example, projects like [DANDI:](https://www.dandiarchive.org/), [BICAN:](https://www.portal.brain-bican.org/), [NeuroLex](https://scicrunch.org/scicrunch/interlex/dashboard) and [ReproNim:](https://www.repronim.org/) store vast amounts of neuroscience knowledge; integrating all the knowledge into a single platform will not only provide an integrated view but also enable new knowledge discovery.
