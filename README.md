@@ -15,6 +15,7 @@ The main objective of BrainyPedia is to represent Neuroscience knowledge as a kn
 - Provides the ability to ingest data in batch or streaming mode for the automated extraction of KGs.
 
 ## Why BrainyPedia?
+
 - **Limited Availability of Platforms for Integrating Neuroscience Data into Knowledge Graphs:** In fields such as biomedicine, many platforms exist, such as, [SPOKE](https://doi.org/10.1093/bioinformatics/btad080) and [CIViC](https://civicdb.org/welcome). <span style="color: red;">However, such resources are comparatively limited in the domain of neuroscience.</span> [LinkRBrain](https://doi.org/10.1016/j.jneumeth.2014.12.008), a web-based platform that integrates anatomical, functional, and genetic knowledge, is among the limited number of such resources. [BrainKnow](http://www.brain-knowledge-engine.org/), the most recent platform, is another platform that is designed to [synthesizes and integrates neuroscience knowledge from scientific literature](https://arxiv.org/pdf/2403.04346.pdf). Additionally, projects like [DANDI](https://dandiarchive.org/) are making strides by enabling sharing of neurophysiology data together with its metadata. 
 
 - **Lack of Support for Heterogeneous Data Sources:** The current platforms in neuroscience are limited in their ability to handle a diverse range of data sources. For instance, [LinkRBrain](https://doi.org/10.1016/j.jneumeth.2014.12.008) can only integrate knowledge from 41 databases, whereas [BrainKnow](http://www.brain-knowledge-engine.org/) solely focuses on scientific literature. <span style="color: red;">However, knowledge is not restricted to just databases or scientific literature, and there is a need for platforms that can accommodate a wider variety of sources (e.g., structured, semi-structured and unstructured sources).</span>
@@ -95,14 +96,32 @@ __Resource:__ The resource will provide the necessary computational resources th
 
 - **Neuroscience-related Companies:** Companies specializing in developing drugs for neurological diseases can use the platform's KGs to gain insights into neurological conditions and treatments.
 
+
+
 ## Use cases
 
-- **Knowledge Extraction and Integration:** BrainyPedia extracts knowledge from diverse sources, such as projects and lab meetings, and formats (scientific literature, databases, text, and JSON) into unified KG representation, offering a comprehensive and integrated view of neuroscience knowledge. For example, projects like [DANDI:](https://www.dandiarchive.org/), [BICAN:](https://www.portal.brain-bican.org/), [NeuroLex](https://scicrunch.org/scicrunch/interlex/dashboard) and [ReproNim:](https://www.repronim.org/) store vast amounts of neuroscience knowledge; integrating all the knowledge into a single platform will not only provide an integrated view but also enable new knowledge discovery.
+- **Extraction/Integration/Refinement:** 
 
-- **Visualization & Analytics:**
-- 
+- **Cards:**
+ 
+- **Casual Inference:**
 
-## Schema
+- **Human in the curation loop:**
+
+- **Compare Atlases:**
+
+- **Find/correct Errors:**
+
+- **Add information/API:**
+
+- **Doing meta-analysis:**
+
+
+## Models
+- GARS
+- ANSRS
+- CAP/CAS
+
 
 ## Usage Scenario
 **Actor:** A
