@@ -62,7 +62,7 @@ BrainKB shall support the KGs' querying and reasoning. It shall also support oth
 To ensure interoperability and ease of integration, BrainKB will focus on using standardized ontologies or schemas. However, not all standardized ontologies or schemas are available. In such cases, other schemas or ontologies must be used. To ensure the interoperability, the alignment will be performed where necessary.
 
 ### Minimize Cognitive Burden and Data Fatigue
-As BrainKB will also provide features to perform the analytics operation in addition to querying the information (or knowledge), a special emphasis shall be placed on ensuring that the information presented to the user does not cause a cognitive burden and data fatigue.  For example, the figure below (left) places more cognitive burden than on the right.
+As BrainKB will also provide features to perform the analytics operation in addition to querying the information (or knowledge), a special emphasis shall be placed on ensuring that the information presented to the user does not cause a cognitive burden and data fatigue. A cognitive burden occurs when the brain must exert more effort to understand information, typically resulting from an overload of visual content. For example, the figure below (left) places more cognitive burden than on the right.
 
 ![](cognitive_burden.png)
 
@@ -142,21 +142,19 @@ BrainKB allows the creation of KGs constructed from heterogeneous sources, e.g.,
 
 
 ## Usage Scenario
-**Actor:** A
+**Actor:** Alice (Neuroscientists)
 
-**Role:** Neuroscientists/Researcher
-
-**Task:** Actor A wants to know if they can gain new insights from their newly collected neuroscience data.
+**Task:** Alice wants to know if they can gain new insights from their newly collected neuroscience data.
 
 **Precondition:** The dataset is usable, i.e., is not corrupted and is related to the neuroscience domain.
 
 **Flow:**
 
-1. Actor A uploads the data into the BrainKB platform through the BrainKB UI (User Interface).
+1. Alice uploads the data into the BrainKB platform through the BrainKB UI (User Interface).
 2. BrainKB, the system, then analyzes data. If any error, e.g., unsupported file format, it will return the error; otherwise, the system will proceed to the next step of knowledge extraction.
 3. The system will perform the knowledge extraction, validation, and alignment operation. If the validation or the alignment issue cannot be resolved automatically, the extracted knowledge represented via KG is flagged for expert review. Upon the successful review, the KGs are integrated (or stored) in the BrainKB storage and is available for visualization and analysis.
 
-**Postcondition:** Actor A discovers new insights through the integration of diverse knowledge sources represented in BrainKB's KGs.
+**Postcondition:** Alice discovers new insights through the integration of diverse knowledge sources represented in BrainKB's KGs.
 
 ## Technology
 - FastAPI
