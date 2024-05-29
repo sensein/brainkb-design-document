@@ -35,8 +35,8 @@ BrainyPedia will support the data from various sources in different formats  (e.
 ### Schema Flexibility
 KGs evolve over time. For example, if we consider the case of the president of a country, it changes overtime. The KGs storing the storing the information regarding the president of the country has to be updated accordingly. Similar is the case for the neuroscience or any other domain. The knowledge may change over time based on new research findings, thereby making previous knowledge obsolete or factually incorrect. Additionally, changes might also occur in the case of schema, such as due to the standardization or alignment or updates. While schema changes may not always be necessary, they may be required to accommodate new information. Therefore, BrainyPedia will support this evolution by allowing the addition (or removal) of entities and relationships (or new knowledge).
 
-- **Example:**
-
+- **Example:** The concepts may change over time, for example, due to major guideline changes or adoption of different standards, or they might become obsolete. For instance, in fields like biology, [newer findings can invalidate existing terms](https://wiki.geneontology.org/Principles_for_term_obsoletion)
+, requiring flexibility in the schema to account for future changes. 
 ### Maintainability
 BrainyPedia shall be maintainable, allowing operations such as KG enrichment and validation to be performed easily.
 
@@ -107,6 +107,8 @@ __Resource:__ The resource will provide the necessary computational resources th
 - **Casual Inference:**
 
 - **Human in the curation loop:**
+
+	[1] _Johnson, E.C., Nguyen, T.T., Dichter, B.K., Zappulla, F., Kosma, M., Gunalan, K., Halchenko, Y.O., Neufeld, S.Q., Schirner, M., Ritter, P. and Martone, M.E., 2023. A maturity model for operations in neuroscience research. arXiv preprint arXiv:2401.00077._
 
 - **Compare Atlases:**
 
