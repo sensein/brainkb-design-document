@@ -85,7 +85,7 @@ __Resource:__ The resource will provide the necessary computational resources th
 
 
 ![](initial-arch.png)
-
+_Figure 3: Architecture of BrainKB_
 ## Target Audience
 
 - **Neuroscience researchers:** BrainKB's primary audience is neuroscience researchers, who can use the platform to integrate, visualize, and analyze neuroscience data. They can also capitalize on the platform's ability to synthesize their data (or knowledge) into KGs.
@@ -100,28 +100,44 @@ __Resource:__ The resource will provide the necessary computational resources th
 
 ## Use cases
 
-- **Extraction/Integration/Refinement:** 
+- **Extraction/Integration/Refinement:** BrainKB will provide features to extract knowledge from diverse sources, such as raw text and scientific publications, and integrate it with the knowledge represented via KGs. Additionally, BrainKB also provides features to refine the extracted knowledge, e.g., through humans in the loop.
 
-- **Cards:**
+- **Cards:** The BrainKB web application allows easy visualization of the knowledge of interest to scientists/researchers stored in KGs and their corresponding interconnected knowledge. The figure below (Figure 4) shows a snippet of the entity card from the BrainKB web application, which can be accessed at [http://18.191.20.10:8000/](http://18.191.20.10:8000/).
+
+	![Entity card](entity-card.png)
+	_Figure 4: Snippet of Entity card from BrainKB web application_
  
-- **Casual Inference:**
+- **Casual Inference:** Casual inference helps distinguish causation from correlation, particularly important the domains like neuroscience [1,2]. BrainKB, which stores the knowledge represented via KGs, thus supports causal inference. The reason is that the KGs can encode the (casual) relationships between entities and enable (casual) reasoning [2].
 
-- **Human in the curation loop:**
+	[1] _Danks, D. and Davis, I., 2023. Causal inference in cognitive neuroscience. Wiley Interdisciplinary Reviews: Cognitive Science, 14(5), p.e1650._
+	[2] _Huang, H. and Vidal, M.E., 2024. CauseKG: A Framework Enhancing Causal Inference with Implicit Knowledge Deduced from Knowledge Graphs. IEEE Access._
+		
+- **Human in the loop:**
+BrainKB allows the creation of KGs constructed from heterogeneous sources, e.g., text and CSV files, in a (semi-) automated fashion (e.g., using NLP) and through community contribution. BrainKB includes human-in-the-loop features, which ensure quality control of the KGs. The human in the loop is also a step in the maturity model for operations in neuroscience [1], helping to optimize KGs (knowledge graphs) curation.
+	- **Example:**
+		- When new evidence is submitted, it is placed in a queued (or hold) stage and progressed upon the moderators' review. Changes might be required based on the review before it appears in the evidence entity card.
+		- If the KGs are manually or automatically created, the moderators will review the concepts' alignment and determine whether the resolution (e.g., entity resolution) has been performed correctly.
 
+			
 	[1] _Johnson, E.C., Nguyen, T.T., Dichter, B.K., Zappulla, F., Kosma, M., Gunalan, K., Halchenko, Y.O., Neufeld, S.Q., Schirner, M., Ritter, P. and Martone, M.E., 2023. A maturity model for operations in neuroscience research. arXiv preprint arXiv:2401.00077._
 
-- **Compare Atlases:**
+- **Compare Atlases:** BrainKB also integrates knowledge from diverse knowledge platform services if available for integration, providing the feature to compare knowledge from across different atlases (e.g., Allen Brain Atlases). 
 
-- **Find/correct Errors:**
+- **Find/correct Errors:** BrainKB will provide a feature to search existing knowledge and correct errors if any. 
 
-- **Add information/API:**
+- **Add information/API:** BrainKB offers an API endpoint that enables seamless integration with its platform. These endpoints facilitate data ingestion from various sources, such as CSV files or raw text, for constructing KGs, performing search operations, and conducting analyses on the stored KGs.
 
-- **Doing meta-analysis:**
+- **Doing meta-analysis:** Meta-analysis is a knowledge-intensive task that requires significant time and effort to find related studies, identify evidence items, annotate the contents, and aggregate the results [1]. BrainKB, which stores knowledge from diverse data sources, including scientific publications, facilitates the meta-analysis.
+
+	[1] _Tiddi, I., Balliet, D. and ten Teije, A., 2020. Fostering scientific meta-analyses with knowledge graphs: a case-study. In The Semantic Web: 17th International Conference, ESWC 2020, Heraklion, Crete, Greece, May 31–June 4, 2020, Proceedings 17 (pp. 287-303). Springer International Publishing._
+
+
 
 
 ## Models
-- GARS
-- ANSRS
+- [GARS](https://github.com/brain-bican/models/blob/main/linkml-schema/gars.yaml)
+- [ANSRS](https://github.com/brain-bican/models/blob/main/linkml-schema/ansrs_core.yaml)
+- [Biolink](https://github.com/brain-bican/models/blob/main/linkml-schema/bican_biolink.yaml)
 - CAP/CAS
 
 
