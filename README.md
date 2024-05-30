@@ -75,7 +75,6 @@ __Assumption:__ We operate on open-world assumptions (OWA), not closed-world ass
 ## Architecture
 The figure below shows the high-level overview of the components of the BrainKB architecture.
 
-
 ![](ingest.png)
 _Figure 2: Ingest Service_
 
@@ -84,9 +83,9 @@ __Application:__ The application (or the application layer) is the go-to point t
 __Service:__ The service layer implements the core logic and is broken down into multiple services based on the functionalities.  
 __Resource:__ The resource will provide the necessary computational resources that are required to deliver the required service by BrainKB.
 
-
 ![](initial-arch.png)
 _Figure 3: Architecture of BrainKB_
+
 ## Target Audience
 
 - **Neuroscience researchers:** BrainKB's primary audience is neuroscience researchers, who can use the platform to integrate, visualize, and analyze neuroscience data. They can also capitalize on the platform's ability to synthesize their data (or knowledge) into KGs.
@@ -97,13 +96,11 @@ _Figure 3: Architecture of BrainKB_
 
 - **Neuroscience-related Companies:** Companies specializing in developing drugs for neurological diseases can use the platform's KGs to gain insights into neurological conditions and treatments.
 
-
-
 ## Use cases
 
 - **Extraction/Integration/Refinement:** BrainKB will provide features to extract knowledge from diverse sources, such as raw text and scientific publications, and integrate it with the knowledge represented via KGs. Additionally, BrainKB also provides features to refine the extracted knowledge, e.g., through humans in the loop.
 
-- **Cards:** The BrainKB web application allows easy visualization of the knowledge of interest to scientists/researchers stored in KGs and their corresponding interconnected knowledge. The figure below (Figure 4) shows a snippet of the entity card from the BrainKB web application, which can be accessed at [http://18.191.20.10:8000/](http://18.191.20.10:8000/).
+- **Cards:** The BrainKB web application allows easy visualization of the knowledge of interest to scientists/researchers stored in KGs and their corresponding interconnected knowledge. The figure below (Figure 4) shows a snippet of the entity card from the BrainKB web application, which can be accessed at [http://beta.brainkb.org](http://beta.brainkb.org).
 
 	![Entity card](entity-card.png)
 	_Figure 4: Snippet of Entity card from BrainKB web application_
