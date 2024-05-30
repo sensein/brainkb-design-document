@@ -1,4 +1,6 @@
 # BrainKB Design Document
+<img src="logo.png" width="100px" style="float:right; margin-top:-45px"/>
+
 **Author:** Tek Raj Chhetri | <tekraj@mit.edu>
 
 ## Overview
