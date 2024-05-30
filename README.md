@@ -145,7 +145,7 @@ Detailed descriptions of the models above are available at [https://brain-bican.
 
 **Task:** Alice wants to know if he can gain new insights from their newly collected neuroscience data.
 
-**Precondition:** The newly collected neuroscience data about is usable, i.e., is not corrupted and is related to the neuroscience domain.
+**Precondition:** The newly collected neuroscience dataset, which includes demographics, gene expression maps, and structural and functional MRI scans, is usable and uncorrupted.
 
 **Flow:**
 
