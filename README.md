@@ -81,8 +81,7 @@ _Figure 2: Ingest Service_
 
 __Application:__ The application (or the application layer) is the go-to point that provides access to BrainKB, such as via UI.
 
-__Service:__ The service layer implements the core logic and is broken down into multiple services based on the functionalities. Furthermore, the services are divided into two layers, layer 1 and layer 2 as indicated by L1 and L2 in the figure below. This is to distinguish what will be exposed to the outside world. The L1 services will expose the API endpoints for external integration while the L2 services will not. L2 services interact with L1 services only. 
-
+__Service:__ The service layer implements the core logic and is broken down into multiple services based on the functionalities.  
 __Resource:__ The resource will provide the necessary computational resources that are required to deliver the required service by BrainKB.
 
 
