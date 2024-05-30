@@ -2,6 +2,9 @@ name: Codespell Check
 
 on: [push, pull_request]
 
+permissions:
+  contents: read
+
 jobs:
   codespell:
     runs-on: ubuntu-latest
@@ -13,6 +16,8 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: '3.x'
+        # Node.js 16 actions are deprecated. Please update the following actions to use Node.js 20
+        node-version: 20
 
     - name: Install Codespell
       run: |
