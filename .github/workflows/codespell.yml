@@ -10,20 +10,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3  # Update to the latest version
 
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4  # Update to the latest version
       with:
         python-version: '3.x'
-        # Node.js 16 actions are deprecated. Please update the following actions to use Node.js 20
-        node-version: 20
 
     - name: Install Codespell
       run: |
         pip install codespell
 
-    - name: Run Codespell
+    - name: Run Codespell and output to markdown file
       run: |
-        codespell  
+        codespell > codespell_output.md
 
+    - name: Codespell output as artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: codespell-output
+        path: codespell_output.md
