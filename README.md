@@ -133,18 +133,19 @@ BrainKB allows the creation of KGs constructed from heterogeneous sources, e.g.,
 
 
 ## Models
-- [GARS](https://github.com/brain-bican/models/blob/main/linkml-schema/gars.yaml)
-- [ANSRS](https://github.com/brain-bican/models/blob/main/linkml-schema/ansrs_core.yaml)
-- [Biolink](https://github.com/brain-bican/models/blob/main/linkml-schema/bican_biolink.yaml)
-- CAP/CAS
+- Genome Annotation Registry Service (GARS) Model
+- Anatomical Structure Reference Service (AnSRS) Model
+- Library Generation Model
+
+Detailed descriptions of the models above are available at [https://brain-bican.github.io/models/](https://brain-bican.github.io/models/). 
 
 
 ## Usage Scenario
 **Actor:** Alice (Neuroscientists)
 
-**Task:** Alice wants to know if they can gain new insights from their newly collected neuroscience data.
+**Task:** Alice wants to know if he can gain new insights from their newly collected neuroscience data.
 
-**Precondition:** The dataset is usable, i.e., is not corrupted and is related to the neuroscience domain.
+**Precondition:** The newly collected neuroscience data about is usable, i.e., is not corrupted and is related to the neuroscience domain.
 
 **Flow:**
 
