@@ -1,0 +1,24 @@
+name: Codespell Check
+
+on: [push, pull_request]
+
+jobs:
+  codespell:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install Codespell
+      run: |
+        pip install codespell
+
+    - name: Run Codespell
+      run: |
+        codespell  
+
