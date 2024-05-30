@@ -10,25 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3  # Update to the latest version
+      uses: actions/checkout@v3
 
-    - name: Set up Python
-      uses: actions/setup-python@v4  # Update to the latest version
+    - name: Run Codespell
+      uses: codespell-project/actions-codespell@v2
       with:
-        python-version: '3.x'
-
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '20'
-
-    - name: Install Codespell
-      run: |
-        pip install codespell
-
-    - name: Run Codespell and output to markdown file
-      run: |
-        codespell > codespell_output.md
+        check_hidden: true
 
     - name: Codespell output as artifact
       uses: actions/upload-artifact@v3
