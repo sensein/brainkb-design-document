@@ -135,6 +135,8 @@ BrainKB allows the creation of KGs constructed from heterogeneous sources, e.g.,
 
 
 ## Models
+Models currently used in BrianKB:
+
 - Genome Annotation Registry Service (GARS) Model
 - Anatomical Structure Reference Service (AnSRS) Model
 - Library Generation Model
