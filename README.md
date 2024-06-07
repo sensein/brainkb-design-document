@@ -22,10 +22,6 @@ The main objective of BrainKB is to represent neuroscience knowledge as a knowle
 
 - **Lack of Support for Heterogeneous Data Sources:** The current platforms in neuroscience are limited in their ability to handle a diverse range of data sources. For instance, [LinkRBrain](https://doi.org/10.1016/j.jneumeth.2014.12.008) can only integrate knowledge from 41 databases, whereas [BrainKnow](http://www.brain-knowledge-engine.org/) solely focuses on scientific literature. <span style="color: red;">However, knowledge is not restricted to just databases or scientific literature, and there is a need for platforms that can accommodate a wider variety of sources (e.g., structured, semi-structured and unstructured sources).</span>
 
-	- **Example:**
-		- Structured data: Relational database
-		- Semi-structured data: JSON, XML and CSV files
-		- Unsuctured data: Text, Video files
 
 
 ## Principles
@@ -85,12 +81,12 @@ The figure below shows the high-level overview of the components of the BrainKB 
 ![](ingest.png)
 _Figure 3: Ingest Service_
 
-__Application:__ The application (or the application layer) is the go-to point that provides access to BrainKB, such as via UI.
+__Application:__ The application (or the application layer or layer 1) is the go-to point that provides access to BrainKB, such as via UI.
 
-__Service:__ The service layer implements the core logic and is broken down into multiple services based on the functionalities.  
-__Resource:__ The resource will provide the necessary computational resources that are required to deliver the required service by BrainKB.
+__Service:__ The service layer (or layer 2) implements the core logic and is broken down into multiple services based on the functionalities.  
+__Resource:__ The resource (or layer 3) will provide the necessary computational resources that are required to deliver the required service by BrainKB.
 
-![](initial-arch.png)
+![](brainkb-arch.png)
 _Figure 4: Architecture of BrainKB_
 
 ## Target Audience
