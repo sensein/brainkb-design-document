@@ -76,10 +76,8 @@ As BrainKB will also provide features to perform the analytics operation in addi
 __Assumption:__ We operate on open-world assumptions (OWA), not closed-world assumptions (CSA). In OWA, we do not make any assumptions about the absence of statements, while in CSA absence of statements would be evaluated as false, i.e., assumed to be false.
 
 ## Architecture
-The figure below shows the high-level overview of the components of the BrainKB architecture.
+The figure below (Figure 3) shows the BrainKB's architecture. It is divided into three layers: application (layer 1), service (layer 2), and resource (layer 3).
 
-![](ingest.png)
-_Figure 3: Ingest Service_
 
 __Application:__ The application (or the application layer or layer 1) is the go-to point that provides access to BrainKB, such as via UI.
 
@@ -87,7 +85,12 @@ __Service:__ The service layer (or layer 2) implements the core logic and is bro
 __Resource:__ The resource (or layer 3) will provide the necessary computational resources that are required to deliver the required service by BrainKB.
 
 ![](brainkb-arch.png)
-_Figure 4: Architecture of BrainKB_
+_Figure 3: Architecture of BrainKB_
+
+Additionally, Figure 4, shows the architecture of the ingest service, a component of BrainKB.
+
+![](ingest.png)
+_Figure 4: Ingest Service_
 
 ## Target Audience
 
