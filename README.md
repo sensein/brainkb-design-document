@@ -58,7 +58,12 @@ The ACC process will ensure human-centricity is maintained alongside automated v
 To enable trust, the provenance, such as the source of the information and the curators (in the case of manual) of all the information, shall be maintained. The provenance conflict resolution mechanism will also be implemented to ensure the accuracy of the provenance information.
 
 ### Querying and Reasoning
-BrainKB shall support the KGs' querying and reasoning. It shall also support other downstream analytics tasks, such as link predictions using machine learning techniques.
+BrainKB shall support the KGs' querying and reasoning. It shall also support other downstream analytics tasks, such as link predictions (see Figure 2) using machine learning techniques.
+
+![](link_prediction.png)
+
+_Figure 2: Link prediction. The figure on the left indicates a KG with a missing link (or relation) indicated by dotted lines and the figure on the right displays the KG after the link prediction._
+
 
 ### Integration and Interoperability
 To ensure interoperability and ease of integration, BrainKB will focus on using standardized ontologies or schemas. However, not all standardized ontologies or schemas are available. In such cases, other schemas or ontologies must be used. To ensure the interoperability, the alignment will be performed where necessary.
@@ -78,7 +83,7 @@ __Assumption:__ We operate on open-world assumptions (OWA), not closed-world ass
 The figure below shows the high-level overview of the components of the BrainKB architecture.
 
 ![](ingest.png)
-_Figure 2: Ingest Service_
+_Figure 3: Ingest Service_
 
 __Application:__ The application (or the application layer) is the go-to point that provides access to BrainKB, such as via UI.
 
@@ -86,7 +91,7 @@ __Service:__ The service layer implements the core logic and is broken down into
 __Resource:__ The resource will provide the necessary computational resources that are required to deliver the required service by BrainKB.
 
 ![](initial-arch.png)
-_Figure 3: Architecture of BrainKB_
+_Figure 4: Architecture of BrainKB_
 
 ## Target Audience
 
