@@ -240,10 +240,12 @@ sequenceDiagram
 ```
 
 ## Github Repository 
-The following repository contains the all the resources including the source code.
 
-- [https://github.com/sensein/BrainKB](https://github.com/sensein/BrainKB)
-
+- **Source code**
+	- [https://github.com/sensein/BrainKB](https://github.com/sensein/BrainKB)
+- **Developer documentation**
+	- [https://github.com/sensein/brainkbdocs](https://github.com/sensein/brainkbdocs) 	
+	
 ## Timelines 
 
 | Date       | Event                          |
