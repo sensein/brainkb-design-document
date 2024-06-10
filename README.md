@@ -26,6 +26,24 @@ The main objective of BrainKB is to represent neuroscience knowledge as a knowle
 
 ## Principles
 
+### Structured (Modeled)
+ All information stored in the KG has associated data models or can be extracted to models. The information will be linked to formal ontologies and linked across datasets. All data models will have well defined schemas and descriptors for human and programmatic consumption.
+
+### Extensible (Read/Write)
+The KG will allow for both information retrieval and upload. This involves a set of services and an API layer that allows for curation of information. The curation of information will reflect the data models. In addition, the KG will link, ingest, or cache other authoritative sources of information.
+
+### Curated (Expertise)
+To support being an authoritative source, information entering the KG will indicate levels of curation. Such curation may take the form of expertise that is embedded into algorithms (e.g., quality metrics, alignment, mapping), is incorporated into data models (e.g., genes, anatomy), and is derived from computational and human analysis (e.g., atlases as outputs of working groups).
+### Usable (Utilitarian)
+The architecture of the KG will be usable by humans and computational entities. The application interfaces will provide user interactivity and programmatic access. The KG will support competencies needed by the community. 
+### Transparent (Basis)
+To increase trust, the provenance of all information in the KG shall be maintained, including absence of provenance and available through the KG interfaces.
+### Programmable (Computable) 
+The information stored will lend itself to compute through appropriate APIs, data formats, and services. The KG shall connect to computational services to generate and provide inferred or derived information relevant to scientists. 
+
+
+## Features
+
 ### Data Ingestion
 BrainKB will support the data from various sources in different formats  (e.g., texts, JSON (JavaScript Object Notation)) for knowledge extraction via the BrainKB user interface (UI) and the API endpoints. Both batch and streaming data ingestion modes will be supported.
  
@@ -69,7 +87,7 @@ As BrainKB will also provide features to perform the analytics operation in addi
 
 ![](cognitive_burden.png)
 
-## Features
+
 
 ## Other considerations
 
