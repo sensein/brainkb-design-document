@@ -95,6 +95,11 @@ As BrainKB will also provide features to perform the analytics operation in addi
 
 __Assumption:__ We operate on open-world assumptions (OWA), not closed-world assumptions (CSA). In OWA, we do not make any assumptions about the absence of statements, while in CSA absence of statements would be evaluated as false, i.e., assumed to be false.
 
+**Example:** Let's consider a university scenario. We want to determine if Jane Doe is enrolled in the **AI 101** course.
+	
+- In CSA, if Jane Doe's enrollment information for AI 101 is not present in the university database, this absence of information is interpreted as Jane Doe not being enrolled in the course.
+- Conversely under OWA, the absence of Jane Doe's enrollment information for AI 101 means that the information is simply missing and it reamins uncertain whether Jane Doe is enrolled or not enrolled in the course.
+
 ## Architecture
 The figure below (Figure 3) shows the BrainKB's architecture. It is divided into three layers: application (layer 1), service (layer 2), and resource (layer 3).
 
