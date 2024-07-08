@@ -63,7 +63,7 @@ BrainKB shall be maintainable, allowing operations such as KG enrichment and val
 BrainKB will allow the community-driven curation of the KGs as well as (semi-) automated extraction and construction of KGs from external sources, e.g, scientific literatures.
 
 ### Accuracy, Completeness and Consistency (ACC)
-BrainKB shall ensure the accuracy of the knowledge for which multi-step (semi-) automated validations will be performed. Additionally, checks will also be performed to ensure that the KG triples are complete, i.e., the mandatory information is present. Further to accuracy and completeness, BrainKB shall ensure that adding the new facts (or KG triples) will not lead to inconsistency (see figure below) with existing knowledge due to factual errors, data inconsistencies, and incompleteness.
+BrainKB shall check the accuracy of the knowledge for which multi-step (semi-) automated validations will be performed. Additionally, checks will be performed to ensure that the KG triples are complete, i.e., the mandatory information is present. Further to accuracy and completeness, BrainKB shall ensure that adding the new facts (or KG triples) will not lead to inconsistency (see figure below) with existing knowledge due to factual errors, data inconsistencies, and incompleteness.
 
 ![](acc.png)
 
