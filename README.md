@@ -48,7 +48,7 @@ The information stored will lend itself to compute through appropriate APIs, dat
 ## Features
 
 ### Data Ingestion
-BrainKB will support the data from various sources in different formats  (e.g., texts, JSON (JavaScript Object Notation)) for knowledge extraction via the BrainKB user interface (UI) and the API endpoints. Both batch and streaming data ingestion modes will be supported.
+BrainKB will support knowledge extraction from various sources in different data formats  (e.g., texts, JSON (JavaScript Object Notation)) via the BrainKB user interface (UI) and the application programming interface (API) endpoints. Both batch and streaming data ingestion modes will be supported.
  
 
 ### Schema Flexibility
