@@ -72,7 +72,7 @@ _Figure 1: KGs. The image on the left shows the original knowledge graph, while 
 The ACC process will ensure human-centricity is maintained alongside automated validation.
 
 ### Provenance
-To enable trust, the provenance, such as the source of the information and the curators (in the case of manual) of all the information, shall be maintained. The provenance conflict resolution mechanism will also be implemented to ensure the accuracy of the provenance information.
+To enable trust, the provenance, i.e., documentation of the source and the curators (in case of manual curation) of all the information, shall be maintained. The provenance conflict resolution mechanism will also be implemented to ensure the accuracy of the provenance information.
 
 ### Querying and Reasoning
 BrainKB shall support the KGs' querying and reasoning. It shall also support other downstream analytics tasks, such as link predictions (see Figure 2) using machine learning techniques.
