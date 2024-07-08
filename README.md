@@ -48,11 +48,11 @@ The information stored will lend itself to compute through appropriate APIs, dat
 ## Features
 
 ### Data Ingestion
-BrainKB will support the data from various sources in different formats  (e.g., texts, JSON (JavaScript Object Notation)) for knowledge extraction via the BrainKB user interface (UI) and the API endpoints. Both batch and streaming data ingestion modes will be supported.
+BrainKB will support knowledge extraction from various sources in different data formats  (e.g., texts, JSON (JavaScript Object Notation)) via the BrainKB user interface (UI) and the application programming interface (API) endpoints. Both batch and streaming data ingestion modes will be supported.
  
 
 ### Schema Flexibility
-KGs evolve over time. For example, if we consider the case of the president of a country, it changes overtime. The KGs storing the information regarding the president of the country has to be updated accordingly. Similar is the case for the neuroscience or any other domain. The knowledge may change over time based on new research findings, thereby making previous knowledge obsolete or factually incorrect. Additionally, changes might also occur in the case of schema, such as due to the standardization or alignment or updates. While schema changes may not always be necessary, they may be required to accommodate new information. Therefore, BrainKB will support this evolution by allowing the addition (or removal) of entities and relationships (or new knowledge).
+KGs evolve over time. For example, if we consider the case of the president of a country, it changes overtime. The KGs storing the information regarding the president of the country has to be updated accordingly. There are  many similar cases in neuroscience or any other domain. The knowledge may change over time based on new research findings, thereby making previous knowledge obsolete or factually incorrect. Additionally, changes might also occur in the schema due to the standardization, alignment or updates. While schema changes may not always be necessary, they may be required to accommodate new information. Therefore, BrainKB will support the evolution by allowing the addition (or removal) of entities and relationships.
 
 - **Example:** In fields like biology, [newer findings can invalidate existing terms](https://wiki.geneontology.org/Principles_for_term_obsoletion), requiring flexibility in the schema to account for future changes. 
 
@@ -62,7 +62,7 @@ BrainKB shall be maintainable, allowing operations such as KG enrichment and val
 BrainKB will allow the community-driven curation of the KGs as well as (semi-) automated extraction and construction of KGs from external sources, e.g, scientific literatures.
 
 ### Accuracy, Completeness and Consistency (ACC)
-BrainKB shall ensure the accuracy of the knowledge for which multi-step (semi-) automated validations will be performed. Additionally, checks will also be performed to ensure that the KG triples are complete, i.e., the mandatory information is present. Further to accuracy and completeness, BrainKB shall ensure that adding the new facts (or KG triples) will not lead to inconsistency (see figure below) with existing knowledge due to factual errors, data inconsistencies, and incompleteness.
+BrainKB shall check the accuracy of the knowledge for which multi-step (semi-) automated validations will be performed. Additionally, checks will be performed to ensure that the KG triples are complete, i.e., the mandatory information is present. Further to accuracy and completeness, BrainKB shall ensure that adding the new facts (or KG triples) will not lead to inconsistency (see figure below) with existing knowledge due to factual errors, data inconsistencies, and incompleteness.
 
 ![](acc.png)
 
@@ -71,7 +71,7 @@ _Figure 1: KGs. The image on the left shows the original knowledge graph, while 
 The ACC process will ensure human-centricity is maintained alongside automated validation.
 
 ### Provenance
-To enable trust, the provenance, such as the source of the information and the curators (in the case of manual) of all the information, shall be maintained. The provenance conflict resolution mechanism will also be implemented to ensure the accuracy of the provenance information.
+To enable trust, the provenance, i.e., documentation of the source and the curators (in case of manual curation) of all the information, shall be maintained. The provenance conflict resolution mechanism will also be implemented to ensure the accuracy of the provenance information.
 
 ### Querying and Reasoning
 BrainKB shall support the KGs' querying and reasoning. It shall also support other downstream analytics tasks, such as link predictions (see Figure 2) using machine learning techniques.
@@ -82,7 +82,7 @@ _Figure 2: Link prediction. The figure on the left indicates a KG with a missing
 
 
 ### Integration and Interoperability
-To ensure interoperability and ease of integration, BrainKB will focus on using standardized ontologies or schemas. However, not all standardized ontologies or schemas are available. In such cases, other schemas or ontologies must be used. To ensure the interoperability, the alignment will be performed where necessary.
+To ensure interoperability and ease of integration, BrainKB will focus on using standardized ontologies or schemas. However,  standardized ontologies or schemas are not always available. In such cases, other schemas or ontologies must be used. To ensure the interoperability, the alignment will be performed where necessary.
 
 ### Minimize Cognitive Burden and Data Fatigue
 As BrainKB will also provide features to perform the analytics operation in addition to querying the information (or knowledge), a special emphasis shall be placed on ensuring that the information presented to the user does not cause a cognitive burden and data fatigue. A cognitive burden occurs when the brain must exert more effort to understand information, typically resulting from an overload of visual content. For example, the figure below (left) places more cognitive burden than on the right.
