@@ -54,11 +54,10 @@ BrainKB will support the data from various sources in different formats  (e.g., 
 ### Schema Flexibility
 KGs evolve over time. For example, if we consider the case of the president of a country, it changes overtime. The KGs storing the information regarding the president of the country has to be updated accordingly. Similar is the case for the neuroscience or any other domain. The knowledge may change over time based on new research findings, thereby making previous knowledge obsolete or factually incorrect. Additionally, changes might also occur in the case of schema, such as due to the standardization or alignment or updates. While schema changes may not always be necessary, they may be required to accommodate new information. Therefore, BrainKB will support this evolution by allowing the addition (or removal) of entities and relationships (or new knowledge).
 
-- **Example:** The concepts may change over time, for example, due to major guideline changes or adoption of different standards, or they might become obsolete. For instance, in fields like biology, [newer findings can invalidate existing terms](https://wiki.geneontology.org/Principles_for_term_obsoletion), requiring flexibility in the schema to account for future changes. 
+- **Example:** In fields like biology, [newer findings can invalidate existing terms](https://wiki.geneontology.org/Principles_for_term_obsoletion), requiring flexibility in the schema to account for future changes. 
 
 ### Maintainability
-BrainKB shall be maintainable, allowing operations such as KG enrichment and validation to be performed easily.
-
+BrainKB shall be maintainable, allowing operations such as KG enrichment and validation to be performed easily. When we mention "validation to be performed easily," we are referring to processes that require minimal human intervention, either through semi-automated or fully-automated methods.
 ### Curation
 BrainKB will allow the community-driven curation of the KGs as well as (semi-) automated extraction and construction of KGs from external sources, e.g, scientific literatures.
 
