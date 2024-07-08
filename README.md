@@ -123,6 +123,22 @@ _Figure 4: Ingest Service_
 
 - **Neuroscience-related Companies:** Companies specializing in developing drugs for neurological diseases can use the platform's KGs to gain insights into neurological conditions and treatments.
 
+## Usage Scenario
+**Actor:** Alice (Neuroscientists)
+
+**Task:** Alice wants to know if he can gain new insights from their newly collected neuroscience data.
+
+**Precondition:** The newly collected neuroscience dataset, which includes demographics, gene expression maps, and structural and functional MRI scans, is usable and uncorrupted.
+
+**Flow:**
+
+1. Alice uploads the data into the BrainKB platform through the BrainKB UI (User Interface).
+2. BrainKB, the system, then analyzes data. If any error, e.g., unsupported file format, it will return the error; otherwise, the system will proceed to the next step of knowledge extraction.
+3. The system will perform the knowledge extraction, validation, and alignment operation. If the validation or the alignment issue cannot be resolved automatically, the extracted knowledge represented via KG is flagged for expert review. Upon the successful review, the KGs are integrated (or stored) in the BrainKB storage and is available for visualization and analysis.
+
+**Postcondition:** Alice discovers new insights through the integration of diverse knowledge sources represented in BrainKB's KGs.
+
+
 ## Use cases
 
 - **Extraction/Integration/Refinement:** BrainKB will provide features to extract knowledge from diverse sources, such as raw text and scientific publications, and integrate it with the knowledge represented via KGs. Additionally, BrainKB will also provides features to refine the extracted knowledge, e.g., through humans in the loop.
@@ -168,22 +184,6 @@ Models currently used in BrianKB:
 
 Detailed descriptions of the models above are available at [https://brain-bican.github.io/models/](https://brain-bican.github.io/models/). 
 
-
-## Usage Scenario
-**Actor:** Alice (Neuroscientists)
-
-**Task:** Alice wants to know if he can gain new insights from their newly collected neuroscience data.
-
-**Precondition:** The newly collected neuroscience dataset, which includes demographics, gene expression maps, and structural and functional MRI scans, is usable and uncorrupted.
-
-**Flow:**
-
-1. Alice uploads the data into the BrainKB platform through the BrainKB UI (User Interface).
-2. BrainKB, the system, then analyzes data. If any error, e.g., unsupported file format, it will return the error; otherwise, the system will proceed to the next step of knowledge extraction.
-3. The system will perform the knowledge extraction, validation, and alignment operation. If the validation or the alignment issue cannot be resolved automatically, the extracted knowledge represented via KG is flagged for expert review. Upon the successful review, the KGs are integrated (or stored) in the BrainKB storage and is available for visualization and analysis.
-
-**Postcondition:** Alice discovers new insights through the integration of diverse knowledge sources represented in BrainKB's KGs.
-
 ## Technology
 - [FastAPI](https://fastapi.tiangolo.com/)
 - [Docker](https://www.docker.com/)
@@ -192,6 +192,7 @@ Detailed descriptions of the models above are available at [https://brain-bican.
 - [Python](https://www.python.org/)
 - Language models ((e.g., Google BERT and LLaMa)
 - [SPARQL](https://www.w3.org/TR/sparql11-query/)
+
 
 ## Sequence diagram
 
