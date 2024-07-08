@@ -83,7 +83,7 @@ _Figure 2: Link prediction. The figure on the left indicates a KG with a missing
 
 
 ### Integration and Interoperability
-To ensure interoperability and ease of integration, BrainKB will focus on using standardized ontologies or schemas. However, not all standardized ontologies or schemas are available. In such cases, other schemas or ontologies must be used. To ensure the interoperability, the alignment will be performed where necessary.
+To ensure interoperability and ease of integration, BrainKB will focus on using standardized ontologies or schemas. However,  standardized ontologies or schemas are not always available. In such cases, other schemas or ontologies must be used. To ensure the interoperability, the alignment will be performed where necessary.
 
 ### Minimize Cognitive Burden and Data Fatigue
 As BrainKB will also provide features to perform the analytics operation in addition to querying the information (or knowledge), a special emphasis shall be placed on ensuring that the information presented to the user does not cause a cognitive burden and data fatigue. A cognitive burden occurs when the brain must exert more effort to understand information, typically resulting from an overload of visual content. For example, the figure below (left) places more cognitive burden than on the right.
