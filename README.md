@@ -261,6 +261,18 @@ We recognize the current [beta site’s](https://beta.brainkb.org/) issues and a
 - **Developer documentation**
 	- [https://github.com/sensein/brainkbdocs](https://github.com/sensein/brainkbdocs) 	
 	
+## Work plan 
+
+| Features       | Status                          |
+|------------|--------------------------------|
+| [UI with NextJS](https://github.com/sensein/brainkb-ui) | Implementation in progress.       |
+| KG construction from scientif publication  | Designed the approach and implementation in progress. |
+| Models (or ontology) design | Implementation in progress.    |
+| [BrainKB documentation including deployment instructions and lessons learned](https://sensein.group/brainkbdocs/) | Pratially complete. Updates will be made as the work progress.   |
+ 
+ 
+
+
 ## Timelines 
 
 | Date       | Event                          |
