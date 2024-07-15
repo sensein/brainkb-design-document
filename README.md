@@ -254,7 +254,6 @@ We recognize the current [beta site’s](https://beta.brainkb.org/) issues and a
 
 - **Performance:** There is a performance issue with the beta site's knowledge base page. This is because we are currently using the free version of GraphDB and it only allows two simultaneous queries. Since, fetching the details, such as Library Aliquot and their inter-related information requires running more than two queries, there are performance issues.  We are looking for the premium version of GraphDB and other opensource triple stores as alternatives.
 
-## API Endpoints
 
 ## Github Repository 
 
