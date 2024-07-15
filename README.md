@@ -143,7 +143,7 @@ _Figure 4: Ingest Service_
 **Postcondition:** Alice discovers new insights through the integration of diverse knowledge sources represented in BrainKB's KGs.
 
 
-## Use cases
+## Use Cases
 
 - **Extraction/Integration/Refinement:** BrainKB will provide features to extract knowledge from diverse sources, such as raw text and scientific publications, and integrate it with the knowledge represented via KGs. Additionally, BrainKB will also provides features to refine the extracted knowledge, e.g., through humans in the loop.
 
@@ -198,7 +198,7 @@ Detailed descriptions of the models above are available at [https://brain-bican.
 - [SPARQL](https://www.w3.org/TR/sparql11-query/)
 
 
-## Sequence diagram
+## Sequence Diagram
 
 The sequence diagram below shows the interactions between different service components for the KG construction.
 
@@ -248,27 +248,30 @@ sequenceDiagram
 ```
 
 
-## Hosting Infrastructure:
+## Hosting Infrastructure
 
 We recognize the current [beta site’s](https://beta.brainkb.org/) issues and are working towards improving it. In particular, we are working on improving the following problems of the beta site.
 
 - **Performance:** There is a performance issue with the beta site's knowledge base page. This is because we are currently using the free version of GraphDB and it only allows two simultaneous queries. Since, fetching the details, such as Library Aliquot and their inter-related information requires running more than two queries, there are performance issues.  We are looking for the premium version of GraphDB and other opensource triple stores as alternatives.
 
+## API Endpoints
+
 ## Github Repository 
 
 - **Source code**
-	- [https://github.com/sensein/BrainKB](https://github.com/sensein/BrainKB)
+	- [https://github.com/sensein/BrainKB](https://github.com/sensein/BrainKB) - Backend services
+	- [https://github.com/sensein/brainkb-ui/tree/admin-ui](https://github.com/sensein/brainkb-ui/tree/admin-ui) - UI
 - **Developer documentation**
 	- [https://github.com/sensein/brainkbdocs](https://github.com/sensein/brainkbdocs) 	
 	
-## Work plan 
+## Work Plan 
 
 | Features       | Status                          |
 |------------|--------------------------------|
-| [UI with NextJS](https://github.com/sensein/brainkb-ui) | Implementation in progress.       |
-| KG construction from scientif publication  | Designed the approach and implementation in progress. |
-| Models (or ontology) design | Implementation in progress.    |
-| [BrainKB documentation including deployment instructions and lessons learned](https://sensein.group/brainkbdocs/) | Pratially complete. Updates will be made as the work progress.   |
+| [UI with NextJS](https://github.com/sensein/brainkb-ui) | Implementation in progress       |
+| KG construction from scientific publication  | Designed the approach and implementation in progress |
+| Structured models (or ontology) design | Implementation in progress|
+| [BrainKB documentation including deployment instructions and lessons learned](https://sensein.group/brainkbdocs/) | Pratially complete. Updates will be made as the work progress   |
  
  
 
