@@ -13,7 +13,7 @@ The main objective of BrainKB is to represent neuroscience knowledge as a knowle
 - Visualization of the KGs.
 
 - Platform to perform different analytics operations over the BrainKB KGs.
-- (Semi-)Automated validation of the BrainKGs to ensure the high quality of the content. 
+- (Semi-)Automated validation of the BrainKB KGs to ensure the high quality of the content. 
 - Provides the ability to ingest data in batch or streaming mode for the automated extraction of KGs.
 
 ## Why BrainKB?
