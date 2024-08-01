@@ -121,7 +121,7 @@ _Figure 4: Ingest Service, one of the service component of BrainKB_
 
 - **Neuroscience researchers:** BrainKB's primary audience will be the neuroscience researchers, who would be able to use the platform to integrate, visualize, and analyze neuroscience data. They will be able to capitalize on the platform's ability to synthesize their data (or knowledge) into KGs.
 
-- **Research Labs and Academic Institutions:** BrainKB will be an invaluable resource for teaching and research in academic contexts specializing in neuroscience research. It offers convenient access to integrated neuroscience data for faculty and students.
+- **Research Labs and Academic Institutions:** BrainKB will be an invaluable resource for teaching in academic contexts specializing in neuroscience. It offers convenient access to integrated neuroscience data for faculty and students.
 
 - **Policy Makers:** Neurology policymakers will be able to use the neuroscience knowledge that BrainKB hosts to make policy decisions. 
 - **Healthcare Professionals:** Healthcare professionals in neurology (or clinical neuroscience) may use BrainKB knowledge to understand and improve neurological disease outcomes.
