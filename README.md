@@ -107,7 +107,7 @@ The figure below (Figure 3) shows the BrainKB's architecture. It is divided into
 __Application:__ The application (or the application layer or layer 1) is the go-to point that provides access to BrainKB, such as via UI.
 
 __Service:__ The service layer (or layer 2) implements the core logic and is broken down into multiple services based on the functionalities.  
-__Resource:__ The resource (or layer 3) will provide the necessary computational resources that are required to deliver the required service by BrainKB.
+__Resource:__ The resource (or layer 3) will provide the necessary computational resources that are required to deliver the required services by BrainKB.
 
 ![](brainkb-arch.png)
 _Figure 3: Architecture of BrainKB_
