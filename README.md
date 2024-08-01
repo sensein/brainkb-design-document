@@ -130,7 +130,7 @@ _Figure 4: Ingest Service_
 ## Usage Scenario
 **Actor:** Alice (Neuroscientists)
 
-**Task:** Alice wants to know if he can gain new insights from their newly collected neuroscience data.
+**Task:** Alice wants to know if she can gain new insights from their newly collected neuroscience data.
 
 **Precondition:** The newly collected neuroscience dataset, which includes demographics, gene expression maps, and structural and functional MRI scans, is usable and uncorrupted.
 
