@@ -123,7 +123,8 @@ _Figure 4: Ingest Service_
 
 - **Research Labs and Academic Institutions:** BrainKB will be an invaluable resource for teaching and research in academic contexts specializing in neuroscience research. It offers convenient access to integrated neuroscience data for faculty and students.
 
-- **Policy Makers and Healthcare Professionals:** Neurology policymakers can use BrainKB, aka the neuroscience knowledge that BrainKB hosts, to make policy decisions. Furthermore, healthcare professionals in neurology (or clinical neuroscience) may also use BrainKB knowledge to understand and improve neurological disease outcomes.
+- **Policy Makers:** Neurology policymakers can use the neuroscience knowledge that BrainKB hosts to make policy decisions. 
+- **Healthcare Professionals:** Healthcare professionals in neurology (or clinical neuroscience) may use BrainKB knowledge to understand and improve neurological disease outcomes.
 
 - **Neuroscience-related Companies:** Companies specializing in developing drugs for neurological diseases can use the platform's KGs to gain insights into neurological conditions and treatments.
 
