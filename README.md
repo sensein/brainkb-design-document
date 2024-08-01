@@ -62,23 +62,26 @@ BrainKB shall be maintainable, allowing operations such as KG enrichment and val
 BrainKB will allow the community-driven curation of the KGs as well as (semi-) automated extraction and construction of KGs from external sources, e.g, scientific literatures.
 
 ### Accuracy, Completeness and Consistency (ACC)
-BrainKB shall check the accuracy of the knowledge for which multi-step (semi-) automated validations will be performed. Additionally, checks will be performed to ensure that the KG triples are complete, i.e., the mandatory information is present. To further ensure accuracy and completeness, BrainKB shall guarantee the additions of new facts (or KG triples) will not lead introduce inconsistencies (see figure below) with existing knowledge due to factual errors, data inconsistencies, and incompleteness.
+BrainKB shall check the accuracy of the knowledge for which multi-step (semi-) automated validations will be performed. Additionally, checks will be performed to ensure that the KG triples are complete, i.e., the mandatory information is present. To further ensure accuracy and completeness, BrainKB shall guarantee the additions of new facts (or KG triples) will not lead introduce inconsistencies (see Figure 1) with existing knowledge due to factual errors, data inconsistencies, and incompleteness.
 
 ![](acc.png)
 
 _Figure 1: KGs. The image on the left shows the original knowledge graph, while the image on the right demonstrates the updated knowledge graph. The green highlighted box indicates new knowledge that has been added, while the **red highlighted box** indicates any inconsistencies caused by factual changes, i.e., **incorrect date of birth**._
 
-The ACC process will ensure human-centricity is maintained alongside automated validation.
+The ACC process will ensure human-centricity is maintained alongside automated validation. Figure 2 shows the high-level overview of the framework that is used for the automated extraction as well as validation of the KG triples. Each agent will perform individual tasks. For example, _Agent 1_ and _Agent 2_ will perform the task of KG triples extraction from the raw text and aligning with the schema (or ontology). Similarly, the validator agents 1, 2 and 3 will perform the validation of the aggregated KG triple. Each validator agent will use the different source for the vlaidation and the _validator agent 4_ will take all the validation results from the three different validator agents and make the final decision. IF the _validator agent 4_ is unable to make the decision for any reason, such as due to unresolvable conflict, it will trigger a alert to the user, who will then perform the manual validation (or confirmation of the validation). Eventhough, framework below (Figure 2) shows the complete pipeline for extraction and validation, each of the tasks can be performed independently. For example, if one wishes to use validate the existing KG triple, one can do so just by using the validation component.
+![](multiagentacc.png)
+
+_Figure 2: KGs. A Multi-Agent Framework for Neuroscience Knowledge Graph Construction & Validation_
 
 ### Provenance
 To enable trust, the provenance, i.e., documentation of the source and the curators (in case of manual curation) of all the information, shall be maintained. The provenance conflict resolution mechanism will also be implemented to ensure the accuracy of the provenance information.
 
 ### Querying and Reasoning
-BrainKB shall support the KGs' querying and reasoning. It shall also support other downstream analytics tasks, such as link predictions (see Figure 2) using machine learning techniques.
+BrainKB shall support the KGs' querying and reasoning. It shall also support other downstream analytics tasks, such as link predictions (see Figure 3) using machine learning techniques.
 
 ![](link_prediction.png)
 
-_Figure 2: Link prediction. The figure on the left indicates a KG with a missing link (or relation) indicated by dotted lines and the figure on the right displays the KG after the link prediction._
+_Figure 3: Link prediction. The figure on the left indicates a KG with a missing link (or relation) indicated by dotted lines and the figure on the right displays the KG after the link prediction._
 
 
 ### Integration and Interoperability
@@ -101,21 +104,21 @@ __Assumption:__ We operate on open-world assumptions (OWA), not closed-world ass
 - Conversely under OWA, the absence of Jane Doe's enrollment information for AI 101 means that the information is simply missing and it remains uncertain whether Jane Doe is enrolled or not enrolled in the course.
 
 ## Architecture
-The figure below (Figure 3) shows the BrainKB's architecture. It is divided into three layers: application layer (layer 1), service layer (layer 2), and resource layer (layer 3).
+The figure below (Figure 4) shows the BrainKB's architecture. It is divided into three layers: application layer (layer 1), service layer (layer 2), and resource layer (layer 3).
 
 
 __Application:__ The application layer(or layer 1) is the go-to point that provides access to BrainKB, such as via UI.
 
-__Service:__ The service layer (or layer 2) implements the core logic and is broken down into multiple services based on the functionalities (e.g., ingestion service which allows ingestion of data and is represented by Figure 4).
+__Service:__ The service layer (or layer 2) implements the core logic and is broken down into multiple services based on the functionalities (e.g., ingestion service which allows ingestion of data and is represented by Figure 5).
 __Resource:__ The resource layer (or layer 3) will provide the necessary computational resources that are required to deliver the required services by BrainKB.
 
 ![](brainkb-arch.png)
-_Figure 3: Architecture of BrainKB_
+_Figure 4: Architecture of BrainKB_
 
 Additionally, Figure 4, shows the architecture of the ingest service, a component of BrainKB.
 
 ![](ingest.png)
-_Figure 4: Ingest Service, one of the service component of BrainKB_
+_Figure 5: Ingest Service, one of the service component of BrainKB_
 
 ## Target Audience
 
@@ -148,10 +151,10 @@ _Figure 4: Ingest Service, one of the service component of BrainKB_
 
 - **Extraction/Integration/Refinement:** BrainKB will provide features to extract knowledge from diverse sources, such as raw text and scientific publications, and integrate it with the knowledge represented via KGs. Additionally, BrainKB will also provide features to refine the extracted knowledge, e.g., through humans in the loop.
 
-- **Cards:** The BrainKB web application allows easy visualization of the knowledge of interest to scientists/researchers stored in KGs and their corresponding interconnected knowledge. Figure 4 shows a snippet of the entity card from the BrainKB web application, which can be accessed at [http://beta.brainkb.org](http://beta.brainkb.org).
+- **Cards:** The BrainKB web application allows easy visualization of the knowledge of interest to scientists/researchers stored in KGs and their corresponding interconnected knowledge. Figure 6 shows a snippet of the entity card from the BrainKB web application, which can be accessed at [http://beta.brainkb.org](http://beta.brainkb.org).
 
 	![Entity card](entity-card.png)
-	_Figure 4: Snippet of Entity card from BrainKB web application_
+	_Figure 6: Snippet of Entity card from BrainKB web application_
  
 - **Casual Inference:** Casual inference helps distinguish causation from correlation, particularly important the domains like neuroscience [1,2]. BrainKB, which stores the knowledge represented via KGs, thus supports causal inference. The reason is that the KGs can encode the (casual) relationships between entities and enable (casual) reasoning [2].
 
@@ -301,4 +304,5 @@ We recognize the current [beta site’s](https://beta.brainkb.org/) issues and a
 | 2024-12-25 | Second version of BrainKB  |
 | 2025-04-10 | First complete version of BrainKB with all conceptualized features                |
 
+## Acknowledgements 
 
