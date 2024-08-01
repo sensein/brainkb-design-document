@@ -101,13 +101,13 @@ __Assumption:__ We operate on open-world assumptions (OWA), not closed-world ass
 - Conversely under OWA, the absence of Jane Doe's enrollment information for AI 101 means that the information is simply missing and it remains uncertain whether Jane Doe is enrolled or not enrolled in the course.
 
 ## Architecture
-The figure below (Figure 3) shows the BrainKB's architecture. It is divided into three layers: application (layer 1), service (layer 2), and resource (layer 3).
+The figure below (Figure 3) shows the BrainKB's architecture. It is divided into three layers: application layer (layer 1), service layer (layer 2), and resource layer (layer 3).
 
 
-__Application:__ The application (or the application layer or layer 1) is the go-to point that provides access to BrainKB, such as via UI.
+__Application:__ The application layer(or layer 1) is the go-to point that provides access to BrainKB, such as via UI.
 
-__Service:__ The service layer (or layer 2) implements the core logic and is broken down into multiple services based on the functionalities.  
-__Resource:__ The resource (or layer 3) will provide the necessary computational resources that are required to deliver the required services by BrainKB.
+__Service:__ The service layer (or layer 2) implements the core logic and is broken down into multiple services based on the functionalities (e.g., ingestion service which allows ingestion of data and is represented by Figure 4).
+__Resource:__ The resource layer (or layer 3) will provide the necessary computational resources that are required to deliver the required services by BrainKB.
 
 ![](brainkb-arch.png)
 _Figure 3: Architecture of BrainKB_
@@ -115,18 +115,18 @@ _Figure 3: Architecture of BrainKB_
 Additionally, Figure 4, shows the architecture of the ingest service, a component of BrainKB.
 
 ![](ingest.png)
-_Figure 4: Ingest Service_
+_Figure 4: Ingest Service, one of the service component of BrainKB_
 
 ## Target Audience
 
-- **Neuroscience researchers:** BrainKB's primary audience is neuroscience researchers, who can use the platform to integrate, visualize, and analyze neuroscience data. They can also capitalize on the platform's ability to synthesize their data (or knowledge) into KGs.
+- **Neuroscience researchers:** BrainKB's primary audience will be the neuroscience researchers, who would be able to use the platform to integrate, visualize, and analyze neuroscience data. They will be able to capitalize on the platform's ability to synthesize their data (or knowledge) into KGs.
 
 - **Research Labs and Academic Institutions:** BrainKB will be an invaluable resource for teaching and research in academic contexts specializing in neuroscience research. It offers convenient access to integrated neuroscience data for faculty and students.
 
-- **Policy Makers:** Neurology policymakers can use the neuroscience knowledge that BrainKB hosts to make policy decisions. 
+- **Policy Makers:** Neurology policymakers will be able to use the neuroscience knowledge that BrainKB hosts to make policy decisions. 
 - **Healthcare Professionals:** Healthcare professionals in neurology (or clinical neuroscience) may use BrainKB knowledge to understand and improve neurological disease outcomes.
 
-- **Neuroscience-related Companies:** Companies specializing in developing drugs for neurological diseases can use the platform's KGs to gain insights into neurological conditions and treatments.
+- **Neuroscience-related Companies:** Companies specializing in developing drugs for neurological diseases will be able to use the platform's KGs to gain insights into neurological conditions and treatments.
 
 ## Usage Scenario
 **Actor:** Alice (Neuroscientists)
