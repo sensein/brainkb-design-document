@@ -253,7 +253,7 @@ sequenceDiagram
 
 We recognize the current [beta site’s](https://beta.brainkb.org/) issues and are working towards improving it. In particular, we are working on improving the following problems of the beta site.
 
-- **Performance:** There is a performance issue with the beta site's knowledge base page. This is because we are currently using the free version of GraphDB and it only allows two simultaneous queries. Since, fetching the details, such as Library Aliquot and their inter-related information requires running more than two queries, there are performance issues.  We are looking for the premium version of GraphDB and other opensource triple stores as alternatives.
+- **Performance:** We are currently using the free version of GraphDB. It has a limitation of two simultaneous queries. Because fetching the details, such as Library Aliquot and their inter-related information, requires running more than two queries, this limitation impacts the beta site's knowledge base page.  We are currently considering the premium version of GraphDB and other opensource triple stores alternatives. The performance of future version of BrainKB will be significantly improved.
 
 
 ## Github Repository 
